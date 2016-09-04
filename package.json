@@ -1,0 +1,24 @@
+{
+  "name": "raspberry-beer-bong",
+  "version": "1.0.0",
+  "description": "Raspberry Pi controlled beer bong",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "build": "webpack ./src/entry.js ./public/bundle.js -p",
+    "dev": "webpack-dev-server ./src/entry.js --progress --colors --content-base public/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "beer",
+    "bong",
+    "raspberry",
+    "pi"
+  ],
+  "author": "Patrick Moody",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.14.0",
+    "whatwg-fetch": "^1.0.0"
+  }
+}
