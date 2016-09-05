@@ -1,7 +1,7 @@
-var fetchTest = require('whatwg-fetch')
+require('whatwg-fetch')
 
 function post(url, body) {
-  return fetchTest(url, {
+  return fetch(url, {
     method: 'POST',
     headers: {
       'Accept': 'application/json',
